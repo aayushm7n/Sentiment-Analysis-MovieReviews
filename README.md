@@ -1,6 +1,6 @@
 # Sentiment Analysis of Movie Reviews 🎬
 
-**A Complete Machine Learning Capstone Project** | December 2025
+**Machine Learning Project** | December 2025
 
 > Teaching computers to understand whether movie reviews are positive or negative using classical ML and cutting-edge deep learning.
 
@@ -497,5 +497,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-**Project Timeline**: Late December 2025 - January 2026
+**Project Timeline**: apx. 2 weeks
 

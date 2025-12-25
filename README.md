@@ -1,16 +1,16 @@
 # Sentiment Analysis of Movie Reviews 🎬
 
-**A Complete Machine Learning Capstone Project** | December 2025
+**Machine Learning Project** | December 2025
 
 > Teaching computers to understand whether movie reviews are positive or negative using classical ML and cutting-edge deep learning.
 
 ---
 
-## 🎯 What This Project Is About
+## About
 
-This is a complete 2-week capstone project that tackles **sentiment analysis** - the task of automatically determining whether a piece of text expresses positive or negative sentiment. Specifically, I built and compared **6 different models** (from simple to sophisticated) to classify 50,000 IMDb movie reviews.
+This is a complete 2-week capstone-grade project that tackles **sentiment analysis** - the task of automatically determining whether a piece of text expresses positive or negative sentiment. Specifically, I have built and compared **6 different models** (from simple to sophisticated) to classify 50,000 IMDb movie reviews.
 
-### Why This Matters
+### Why This Matters (And why I chose this)
 - Companies use this tech everywhere (Netflix, Amazon, every streaming service)
 - Demonstrates both classical ML fundamentals AND modern deep learning
 - Real production considerations: not just "which is most accurate" but "which should I use when?"
@@ -25,11 +25,11 @@ This is a complete 2-week capstone project that tackles **sentiment analysis** -
 - [Honest Limitations](#limitations) - What doesn't work (yet)
 - [Technical Details](#technical-deep-dive) - For the ML nerds
 
-**Want the human-readable version?** Check out [PROJECT_STORY.md](PROJECT_STORY.md) for a more conversational walkthrough!
+**Want the layman-readable version?** Check out [PROJECT_STORY.md](PROJECT_STORY.md) for a more conversational walkthrough.
 
 ---
 
-## 🎯 Problem Statement
+## Problem Statement
 
 ### The Challenge
 Can we teach a computer to read movie reviews and understand if they're positive or negative? Sounds simple, but:
@@ -235,23 +235,14 @@ Open and run these notebooks sequentially:
    - Can see exactly which words influence decisions
    - Use when: Need to explain predictions to humans
 
-### What Actually Matters
-
-For a **resume/portfolio**: "Achieved 92% accuracy with BERT, but also implemented SVM with only 3% accuracy loss and 50x speedup"
-
-For an **interview**: Be ready to discuss trade-offs, not just accuracy
-
-For **production**: Probably go with SVM unless you have specific accuracy requirements
-
----
 
 ## 📁 Project Structure
 
 ```
 Sentiment-Analysis-MovieReviews/
 │
-├── README.md                    # You are here (technical docs)
-├── PROJECT_STORY.md            # Human-friendly walkthrough
+├── README.md                   # (technical docs)
+├── PROJECT_STORY.md            # Layman-friendly walkthrough
 ├── QUICK_START.md              # Getting started guide
 ├── requirements.txt            # All Python dependencies
 ├── .gitignore                  # Git ignore rules
@@ -369,7 +360,7 @@ Training:
 - F1-Score: 2 × (Precision × Recall) / (Precision + Recall)
 - ROC-AUC: Area under ROC curve
 
-**Why F1-Score?**  
+**F1-Score?**  
 Balances precision and recall, important when cost of false positives ≈ cost of false negatives
 
 ### Preprocessing Pipeline
@@ -391,17 +382,17 @@ Balances precision and recall, important when cost of false positives ≈ cost o
 ## 📚 Key Learnings
 
 ### What Worked Well
-✅ TF-IDF + SVM is surprisingly powerful (~89% accuracy)  
-✅ BERT fine-tuning achieves state-of-the-art results  
-✅ Proper preprocessing matters more than fancy models  
-✅ BiLSTM captures context better than unidirectional  
-✅ Lemmatization > Stemming for this task
+ TF-IDF + SVM is surprisingly powerful (~89% accuracy)  
+ BERT fine-tuning achieves state-of-the-art results  
+ Proper preprocessing matters more than fancy models  
+ BiLSTM captures context better than unidirectional  
+ Lemmatization > Stemming for this task
 
 ### What Didn't Work
-❌ Removing all stopwords hurt performance (context matters)  
-❌ Character-level models were too slow without benefit  
-❌ Simple bag-of-words couldn't beat TF-IDF  
-❌ Overly aggressive text cleaning removed important signals
+ Removing all stopwords hurt performance (context matters)  
+ Character-level models were too slow without benefit  
+ Simple bag-of-words couldn't beat TF-IDF  
+ Overly aggressive text cleaning removed important signals
 
 ### Surprises
 🤔 Logistic Regression only 4% behind BERT but 100x faster  
@@ -409,22 +400,6 @@ Balances precision and recall, important when cost of false positives ≈ cost o
 🤔 BERT doesn't need much fine-tuning (3 epochs sufficient)  
 🤔 Sarcasm breaks everything (future research area)
 
----
-
-## 💼 For Your Resume
-
-### Project Description
-```
-Sentiment Analysis of IMDb Movie Reviews | Python, PyTorch, BERT, Scikit-learn
-
-• Developed end-to-end NLP pipeline processing 50,000 IMDb movie reviews
-• Implemented and compared 6 ML models: Logistic Regression, Naive Bayes, SVM,
-  Random Forest, LSTM, and DistilBERT achieving up to 92% accuracy
-• Engineered TF-IDF features and custom text preprocessing pipeline with NLTK
-• Conducted comprehensive model evaluation analyzing accuracy-speed trade-offs
-  for production deployment
-• Created interactive Jupyter notebooks with 2000+ lines of documented Python code
-```
 
 ### Skills Demonstrated
 - Natural Language Processing (NLP)
@@ -437,13 +412,6 @@ Sentiment Analysis of IMDb Movie Reviews | Python, PyTorch, BERT, Scikit-learn
 - Data Visualization
 - Technical Documentation
 
-### Interview Talking Points
-1. **Trade-off analysis**: "BERT was 92% accurate but SVM was 89% with 50x speedup"
-2. **Production thinking**: "For real-time API, I'd use SVM; for batch processing, BERT"
-3. **Problem-solving**: "Handled sarcasm by [future work idea]"
-4. **Learning**: "Initially tried removing all stopwords - hurt performance because context matters"
-
----
 
 ## 📖 References & Resources
 
@@ -478,21 +446,16 @@ A: Depends on your use case:
 - Need explainability → Logistic Regression
 
 **Q: How long did this take?**  
-A: About 2 weeks (~40-50 hours total). Good capstone-level time investment.
+A: About 2 weeks (~40-50 hours total).
 
 **Q: Will this work on tweets/product reviews?**  
 A: Probably not without retraining. Different domains have different language patterns.
-
-**Q: Can you help me with my project?**  
-A: Check out [PROJECT_STORY.md](PROJECT_STORY.md) for detailed explanations. If still stuck, open an issue!
-
 ---
 
 ## 📬 Contact
 
-**Author**: Aayush  
-**Date**: December 24, 2025  
-**Project Type**: Machine Learning Capstone
+**Author**: Aayushman Singh Chandel
+**Project Type**: Machine Learning
 
 ---
 
@@ -515,11 +478,7 @@ MIT License - Feel free to use this for learning, projects, or portfolio work.
 
 **🐛 Found a bug? Issues and PRs welcome!**
 
-**💬 Questions? Check PROJECT_STORY.md for the human-readable version!**
-
----
-
-*Project Status*: ✅ Complete | *Last Updated*: December 24, 2025
+**💬 Questions? Check PROJECT_STORY.md for the layman-friendly version!**
 
 ---
 
@@ -538,5 +497,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-**Project Timeline**: 2 weeks (December 2025)  
-
+**Project Timeline**: apx. 2 weeks

@@ -1,5 +1,5 @@
 # Sentiment Analysis of Movie Reviews 🎬
-
+> Author : Aayushman Singh Chandel
 **Machine Learning Project** | December 2025
 
 > Teaching computers to understand whether movie reviews are positive or negative using classical ML and cutting-edge deep learning.
@@ -8,9 +8,9 @@
 
 ## About
 
-This is a complete 2-week capstone-grade project that tackles **sentiment analysis** - the task of automatically determining whether a piece of text expresses positive or negative sentiment. Specifically, I have built and compared **6 different models** (from simple to sophisticated) to classify 50,000 IMDb movie reviews.
+This is a project that tackles **sentiment analysis** - the task of automatically determining whether a piece of text expresses positive or negative sentiment. Specifically, I have built and compared **6 different models** (from simple to sophisticated) to classify 50,000 IMDb movie reviews.
 
-### Why This Matters (And why I chose this)
+### Relevance
 - Companies use this tech everywhere (Netflix, Amazon, every streaming service)
 - Demonstrates both classical ML fundamentals AND modern deep learning
 - Real production considerations: not just "which is most accurate" but "which should I use when?"
@@ -25,7 +25,7 @@ This is a complete 2-week capstone-grade project that tackles **sentiment analys
 - [Honest Limitations](#limitations) - What doesn't work (yet)
 - [Technical Details](#technical-deep-dive) - For the ML nerds
 
-**Want the layman-readable version?** Check out [PROJECT_STORY.md](PROJECT_STORY.md) for a more conversational walkthrough.
+**Layman-readable version** Check out [PROJECT_STORY.md](PROJECT_STORY.md) for a more easy-going walkthrough.
 
 ---
 
@@ -72,8 +72,6 @@ Can we teach a computer to read movie reviews and understand if they're positive
 - **Language**: English
 - **Format**: Plain text reviews with sentiment labels
 
-### What Makes This Dataset Interesting
-
 **Variety in Length**:
 - Short: "Loved it!" (2 words)
 - Long: Multi-paragraph essays (2000+ words)
@@ -103,7 +101,7 @@ Can we teach a computer to read movie reviews and understand if they're positive
 
 ---
 
-## � Quick Start (3 Steps)
+## Quick Start (3 Steps)
 
 ### Prerequisites
 - Python 3.9+ (tested with 3.14)
@@ -139,7 +137,7 @@ Open and run these notebooks sequentially:
 
 ---
 
-## 📓 The 4 Notebooks
+## The Notebooks
 
 ### Notebook 1: EDA & Preprocessing
 **File**: `01_eda_preprocessing.ipynb`  
@@ -202,7 +200,7 @@ Open and run these notebooks sequentially:
 
 ---
 
-## 📊 Results at a Glance
+## Results
 
 ### Model Performance Summary
 
@@ -236,7 +234,7 @@ Open and run these notebooks sequentially:
    - Use when: Need to explain predictions to humans
 
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Sentiment-Analysis-MovieReviews/
@@ -279,7 +277,7 @@ Sentiment-Analysis-MovieReviews/
 ---
 ---
 
-## 🔧 Technical Deep Dive
+## Technical Details
 
 ### Technologies Used
 
@@ -379,7 +377,7 @@ Balances precision and recall, important when cost of false positives ≈ cost o
 
 ---
 
-## 📚 Key Learnings
+## Key Learnings
 
 ### What Worked Well
  TF-IDF + SVM is surprisingly powerful (~89% accuracy)  
@@ -395,10 +393,10 @@ Balances precision and recall, important when cost of false positives ≈ cost o
  Overly aggressive text cleaning removed important signals
 
 ### Surprises
-🤔 Logistic Regression only 4% behind BERT but 100x faster  
-🤔 Random Forest underperformed vs simpler models  
-🤔 BERT doesn't need much fine-tuning (3 epochs sufficient)  
-🤔 Sarcasm breaks everything (future research area)
+Logistic Regression only 4% behind BERT but 100x faster  
+Random Forest underperformed vs simpler models  
+BERT doesn't need much fine-tuning (3 epochs sufficient)  
+Sarcasm breaks everything (future research area)
 
 
 ### Skills Demonstrated
@@ -413,7 +411,7 @@ Balances precision and recall, important when cost of false positives ≈ cost o
 - Technical Documentation
 
 
-## 📖 References & Resources
+## References & Resources
 
 ### Dataset
 - Maas, A. L., et al. (2011). "Learning Word Vectors for Sentiment Analysis." *ACL 2011*
@@ -430,7 +428,7 @@ Balances precision and recall, important when cost of false positives ≈ cost o
 
 ---
 
-## 🙋 FAQ
+## Probable FAQs
 
 **Q: Can I use this code for my project?**  
 A: Yes! It's open source. Just give credit and don't plagiarize for academic work.
@@ -452,49 +450,18 @@ A: About 2 weeks (~40-50 hours total).
 A: Probably not without retraining. Different domains have different language patterns.
 ---
 
-## 📬 Contact
-
-**Author**: Aayushman Singh Chandel
-**Project Type**: Machine Learning
-
----
-
 ## 📄 License
 
 MIT License - Feel free to use this for learning, projects, or portfolio work.
 
 ---
 
-## 🎉 Acknowledgments
+## Acknowledgments
 
 - Stanford AI Lab for the amazing IMDb dataset
 - HuggingFace for making transformers accessible
 - PyTorch team for the deep learning framework
 - The open-source community for all the amazing tools
 
----
-
-**⭐ If this helped you, consider giving it a star!**
-
-**🐛 Found a bug? Issues and PRs welcome!**
-
-**💬 Questions? Check PROJECT_STORY.md for the layman-friendly version!**
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
-## 🙏 Acknowledgments
-
-- Stanford AI Lab for the IMDb dataset
-- HuggingFace for transformer models and datasets library
-- PyTorch team for the deep learning framework
-- Open-source community for amazing tools and libraries
-
----
 
 **Project Timeline**: apx. 2 weeks
